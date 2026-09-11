@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1789147214 source:c:\users\user\desktop\oop\jkuat_student_information_system\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
