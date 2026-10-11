@@ -39,7 +39,6 @@ class Student : public User {
     vector<string> notes, assignments, cats;
     double grade = 0, examMark = 0;
 
-    // Prints a numbered list, or a fallback message if it's empty.
     void printList(const string &title, const vector<string> &items) {
         cout << "\n===== " << title << " =====\n";
         if (items.empty()) {
@@ -93,7 +92,6 @@ public:
 class Lecturer : public User {
     string staffNumber;
 
-    // Reads a full line of input for a given prompt.
     string promptLine(const string &label) {
         string value;
         cout << label;
@@ -259,12 +257,10 @@ void adminMenu(Administrator &admin) {
 }
 
 int main() {
-    // Demo accounts
     Student student("SCT121-0470/2025", "student", "1234", "Fabius Kamau");
     Lecturer lecturer("LEC001", "lecturer", "1234", "Demo Lecturer");
     Administrator admin("admin", "1234", "System Administrator");
 
-    // Sample learning materials
     student.addNote("Introduction to Object Oriented Programming");
     student.addAssignment("OOP Assignment 1");
     student.addCAT("OOP CAT 1");
